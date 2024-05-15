@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting.SettingActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_indonesia_flag"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/indonesia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Button
+        android:id="@+id/btn_indonesia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/indonesia"
+        app:cornerRadius="?attr/cornerRadius"
+        app:layout_constraintEnd_toEndOf="@id/iv_indonesia_flag"
+        app:layout_constraintStart_toStartOf="@id/iv_indonesia_flag"
+        app:layout_constraintTop_toBottomOf="@id/iv_indonesia_flag" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_england_flag"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/english"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Button
+        android:id="@+id/btn_england"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/english"
+        app:cornerRadius="?attr/cornerRadius"
+        app:layout_constraintEnd_toEndOf="@id/iv_england_flag"
+        app:layout_constraintStart_toStartOf="@id/iv_england_flag"
+        app:layout_constraintTop_toBottomOf="@id/iv_england_flag" />
+</androidx.constraintlayout.widget.ConstraintLayout>
